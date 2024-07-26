@@ -1,0 +1,4348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --heading-font: "Nova Square", sans-serif;
+  --main-font: "Red Hat Display", sans-serif;
+  --gray-color: #484848;
+  --button-shadow: 0px 15px 50px 0px #ffffff40;
+}
+
+body {
+  background-color: #242323;
+  font-family: var(--main-font);
+  overflow-x: hidden;
+}
+
+.container1 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: var(--heading-font);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container2 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Start navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.nav-center ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-center a {
+  color: #b6b6b6;
+  transition: 0.3s;
+}
+
+.nav-center a:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-right h2 {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right select {
+  border: none;
+  font-size: 1.1rem;
+  background-color: transparent;
+  color: #fff;
+}
+
+.nav-right select option {
+  color: #fff;
+  background-color: #000;
+}
+
+.navlist i {
+  display: none;
+  position: static;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-content i {
+  color: #fff;
+  display: none;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+}
+
+.nav-content a {
+  color: #484848;
+}
+
+.nav-content ul {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  text-wrap: nowrap;
+  width: 5rem;
+  display: none;
+  padding: 5px;
+}
+
+.nav-content ul li {
+  width: 7rem;
+  padding: 5px;
+  font-size: 1rem;
+  margin: 10px 0;
+  border-bottom: 2px solid #000;
+}
+
+.btn {
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
+  box-shadow: var(--button-shadow);
+}
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+  transition: 0.2s;
+}
+
+.navlist-content {
+  display: none;
+  background-color: #6b6b6b;
+  border-radius: 10px;
+  width: 10rem;
+  position: absolute;
+  bottom: 60%;
+  left: 73%;
+  height: 10rem;
+}
+
+.navlist-content ul {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.navlist-content ul a {
+  color: #000;
+}
+
+/* Finish navbar */
+
+/* Start main page */
+.wrapper {
+  height: 40rem;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 1.5rem;
+  margin-bottom: 10rem;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+.main-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main-left h1 {
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+.main-left p {
+  width: 23rem;
+  font-size: 1.5rem;
+}
+
+.main-right {
+  width: 50rem;
+  height: 40rem;
+  background-image: url("../images/car.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.btn-main {
+  width: 11rem;
+  height: 3.3rem;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Finish main page */
+
+/* Start about */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.about h1 {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.about > p {
+  color: #9f9f9f;
+  font-size: 1.5rem;
+}
+
+.about-box {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+  border-radius: 27px;
+  padding: 2rem;
+}
+
+.about-text p {
+  color: #fff;
+  font-weight: 400;
+}
+/* Finish about */
+
+/* Start services section */
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.services h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+.services > p {
+  color: #9f9f9f;
+  font-size: 1.5rem;
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 19rem;
+  height: 28rem;
+  background-color: #333333;
+  border-radius: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.box-img {
+  width: 18rem;
+  height: 12.5rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.box-img img {
+  width: 16rem;
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.box-text p {
+  color: #fff;
+  font-weight: 400;
+}
+
+.box-text h2 {
+  color: #fff;
+}
+
+.box-text button {
+  width: 7.5rem;
+  position: absolute;
+  bottom: 1.5rem;
+}
+/* Finish services section */
+
+/* Start price section */
+.price {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15rem;
+  gap: 1.5rem;
+}
+
+.price .heading h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.price .heading p {
+  color: #9f9f9f;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.blur-bcg {
+  width: 100%;
+  height: 20rem;
+  background-image: url("../images/blur.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.price-text {
+  position: relative;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+}
+
+.price-text p {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.price-text button {
+  width: 14rem;
+  padding: 1rem;
+}
+
+.heading-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.heading-price h2 {
+  font-size: 3.7rem;
+  font-weight: 400;
+}
+
+.heading-price h3 {
+  font-weight: 400;
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+
+.str {
+  font-size: 3.7rem;
+  font-weight: 600;
+}
+
+.price-text img {
+  width: 45rem;
+  height: 22rem;
+  align-self: flex-end;
+  margin-top: -8rem;
+}
+/* Start buttons */
+
+.price-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.icons i {
+  cursor: pointer;
+  width: 3rem;
+  color: #a4a4a4;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+.icons i:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.car-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 10rem;
+}
+
+.car {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+  height: 18.7rem;
+  background-color: #333333;
+  border-radius: 20px;
+  gap: 1rem;
+  transition: 0.3s;
+}
+
+.v-class {
+  width: 25rem;
+  height: 15rem;
+  background-image: url("../images/v-class.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.s-class {
+  width: 25rem;
+  height: 15rem;
+  background-image: url("../images/s-class.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.m5 {
+  width: 25rem;
+  height: 15rem;
+  background-image: url("../images/m5.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.car h4 {
+  position: absolute;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 400;
+  bottom: 2rem;
+}
+
+.car:hover {
+  background-color: #494949;
+  transition: 0.3s;
+}
+/* Finish buttons */
+/* Finish price section */
+
+/* Start brands */
+.brands {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  height: 15.5rem;
+  border-radius: 20px;
+  margin-bottom: 10rem;
+}
+
+.brands img {
+  width: 15.4rem;
+  height: 5.5rem;
+}
+/* Finish brands */
+
+/* Start reasons */
+
+.reasons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rem;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.heading h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.heading p {
+  color: #818181;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.cards {
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 8.6rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 38rem;
+  height: 13rem;
+  background-color: #333333;
+  border-radius: 20px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-text h3 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.card-text p {
+  color: #fff;
+  font-weight: 400;
+  width: 15.5rem;
+}
+/* Finish reasons */
+
+/* Start email section */
+.area {
+  margin-bottom: 10rem;
+}
+
+.areas {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.area-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.areas input {
+  border: none;
+  outline: none;
+  background-color: #3a3a3a;
+  border-radius: 10px;
+  width: 35rem;
+  padding-left: 1rem;
+  color: #fff;
+}
+
+[type="number"],
+[type="text1"],
+[type="email"] {
+  height: 3.5rem;
+}
+
+[type="text2"] {
+  height: 10rem;
+}
+
+.check {
+  width: 35rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+label {
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* Finish email section */
+
+/* Start footer section */
+footer {
+  width: 100%;
+  height: 70vh;
+  background-color: #fff;
+  padding-top: 3rem;
+}
+
+.last {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.last1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.last-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.last-left h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.last-left p {
+  font-size: 1.5rem;
+  color: #6b6b6b;
+}
+
+.last-input {
+  width: 36rem;
+  height: 4rem;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.last-input input {
+  height: 90%;
+  width: 70%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-left: 1rem;
+  color: #000;
+  font-size: 1.1rem;
+}
+
+.last-input button {
+  width: 9rem;
+  height: 3.4rem;
+  padding-right: 1rem;
+}
+
+.last-right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: flex-end;
+}
+
+.footer-logo {
+  cursor: pointer;
+}
+
+.last-right ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.last-address {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  width: 100%;
+  background-color: #fff;
+}
+
+.copy {
+  height: 3rem;
+  border-top: 1px solid gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Finish footer section */
+
+/* Start media queries */
+
+@media (max-width: 1500px) {
+  .heading h1 {
+    font-size: 3.8rem;
+  }
+
+  .heading p {
+    font-size: 1.6rem;
+  }
+
+  .cards {
+    height: 100vh;
+    gap: 1.4rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .card-img {
+    width: 14.8rem;
+    height: 8.4rem;
+  }
+
+  .card {
+    width: 37rem;
+    height: 12rem;
+  }
+
+  .card-text {
+    gap: 1.4rem;
+  }
+
+  .card-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .card-text p {
+    width: 15.3rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  .heading h1 {
+    font-size: 3.8rem;
+  }
+
+  .heading p {
+    font-size: 1.6rem;
+  }
+
+  .cards {
+    height: 100vh;
+    gap: 1.4rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .card-img {
+    width: 14.8rem;
+    height: 8.4rem;
+  }
+
+  .card {
+    width: 37rem;
+    height: 12rem;
+  }
+
+  .card-text {
+    gap: 1.4rem;
+  }
+
+  .card-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .card-text p {
+    width: 15.3rem;
+  }
+
+  /* input section */
+
+  .area-left {
+    gap: 1.8rem;
+  }
+
+  .areas input {
+    width: 33rem;
+    padding-left: 1rem;
+  }
+
+  [type="number"],
+  [type="text1"],
+  [type="email"] {
+    height: 3.5rem;
+  }
+
+  [type="text2"] {
+    height: 10rem;
+  }
+
+  .check {
+    width: 33rem;
+    gap: 1rem;
+  }
+
+  .check button {
+    width: 10rem;
+    height: 3rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .area-right img {
+    width: 40rem;
+    height: 32rem;
+  }
+
+  /* input section */
+}
+
+@media (max-width: 1330px) {
+  /* about */
+  .about-box {
+    padding: 1.5rem;
+  }
+
+  .about-text > p {
+    font-size: 0.8rem;
+  }
+
+  .about-box img {
+    width: 30rem;
+    height: 20rem;
+  }
+  /* about */
+
+  /* services */
+
+  .services h1 {
+    font-size: 3.5rem;
+  }
+
+  .services > p {
+    font-size: 1rem;
+  }
+
+  .box {
+    gap: 1.7rem;
+    width: 16rem;
+    height: 27rem;
+  }
+
+  .box-img {
+    width: 16rem;
+    height: 11rem;
+    padding: 0.8rem;
+  }
+
+  .box-img img {
+    width: 14rem;
+  }
+
+  .box-text {
+    gap: 0.5rem;
+  }
+
+  .box-text p {
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+
+  .box-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .box-text button {
+    width: 7.5rem;
+    bottom: 1.5rem;
+  }
+  /* services */
+
+  /* price */
+  .price .heading h1 {
+    font-size: 3.8rem;
+  }
+
+  .price .heading p {
+    font-size: 1.4rem;
+  }
+
+  .blur-bcg {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .price-text {
+    width: 90%;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .price-text p {
+    font-size: 1.6rem;
+  }
+
+  .price-text button {
+    width: 13.5rem;
+    padding: 1rem;
+  }
+
+  .heading-price h2 {
+    font-size: 3.5rem;
+  }
+
+  .heading-price h3 {
+    font-size: 2.1rem;
+  }
+
+  .str {
+    font-size: 3.5rem;
+  }
+
+  .price-text img {
+    width: 43rem;
+    height: 20rem;
+    margin-top: -7rem;
+    margin-left: 5rem;
+  }
+  /* Start buttons */
+
+  .price-buttons {
+    gap: 2.8rem;
+  }
+
+  .icons i {
+    width: 3rem;
+    font-size: 1.8rem;
+  }
+
+  .car-box {
+    gap: 1.8rem;
+  }
+
+  .car {
+    width: 24rem;
+    height: 18rem;
+  }
+
+  .v-class {
+    width: 24rem;
+    height: 14rem;
+  }
+  .s-class {
+    width: 24rem;
+    height: 14rem;
+  }
+
+  .m5 {
+    width: 24rem;
+    height: 14rem;
+  }
+
+  .car h4 {
+    font-size: 1.4rem;
+    bottom: 2rem;
+  }
+
+  /* price */
+
+  /* brands */
+  .brands {
+    height: 15rem;
+    margin-bottom: 10rem;
+  }
+
+  .brands img {
+    width: 15rem;
+    height: 5rem;
+  }
+  /* brands */
+
+  /* cards */
+  .heading h1 {
+    font-size: 3.6rem;
+  }
+
+  .heading p {
+    font-size: 1.4rem;
+  }
+
+  .cards {
+    height: 90vh;
+    gap: 1.3rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .card-img {
+    width: 14.6rem;
+    height: 8.2rem;
+  }
+
+  .card {
+    width: 35rem;
+    height: 10rem;
+  }
+
+  .card-text {
+    gap: 1.3rem;
+  }
+
+  .card-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .card-text p {
+    width: 15.2rem;
+  }
+  /* cards */
+
+  /* input section */
+
+  .area-left {
+    gap: 1.7rem;
+  }
+
+  .areas input {
+    width: 31rem;
+    padding-left: 1rem;
+  }
+
+  [type="number"],
+  [type="text1"],
+  [type="email"] {
+    height: 3.4rem;
+  }
+
+  [type="text2"] {
+    height: 9rem;
+  }
+
+  .check {
+    width: 31rem;
+    gap: 1rem;
+  }
+
+  .check button {
+    width: 9rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .area-right img {
+    width: 38rem;
+    height: 30rem;
+  }
+
+  /* input section */
+
+  /* last */
+
+  .last-left h2 {
+    font-size: 2.5rem;
+  }
+
+  .last-left p {
+    font-size: 1rem;
+  }
+
+  .last-input {
+    width: 30rem;
+    height: 3.5rem;
+  }
+
+  .last-input input {
+    height: 90%;
+    width: 70%;
+    font-size: 1rem;
+  }
+
+  .last-input button {
+    width: 8rem;
+    height: 2.9rem;
+    padding-right: 1rem;
+  }
+
+  .footer-logo img {
+    width: 18rem;
+    height: auto;
+  }
+
+  .last-right ul {
+    gap: 1rem;
+  }
+
+  .last-address {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  /* last */
+}
+
+@media (max-width: 1250px) {
+  /* price */
+  .price .heading h1 {
+    font-size: 3.7rem;
+  }
+
+  .price .heading p {
+    font-size: 1.3rem;
+  }
+
+  .blur-bcg {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .price-text {
+    width: 90%;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .price-text p {
+    font-size: 1.5rem;
+  }
+
+  .price-text button {
+    width: 13.4rem;
+    padding: 1rem;
+  }
+
+  .heading-price h2 {
+    font-size: 3.4rem;
+  }
+
+  .heading-price h3 {
+    font-size: 2rem;
+  }
+
+  .str {
+    font-size: 3.4rem;
+  }
+
+  .price-text img {
+    width: 41rem;
+    height: 18rem;
+    margin-top: -7rem;
+    padding-left: 5rem;
+  }
+  /* Start buttons */
+
+  .price-buttons {
+    gap: 2.7rem;
+  }
+
+  .icons i {
+    width: 3rem;
+    font-size: 1.7rem;
+  }
+
+  .car-box {
+    gap: 1.7rem;
+  }
+
+  .car {
+    width: 23rem;
+    height: 17rem;
+  }
+
+  .v-class {
+    width: 23rem;
+    height: 13rem;
+  }
+  .s-class {
+    width: 23rem;
+    height: 13rem;
+  }
+
+  .m5 {
+    width: 23rem;
+    height: 13rem;
+  }
+
+  .car h4 {
+    font-size: 1.3rem;
+    bottom: 2rem;
+  }
+
+  /* price */
+
+  /* brands */
+  .brands {
+    height: 14.5rem;
+    margin-bottom: 10rem;
+  }
+
+  .brands img {
+    width: 14.5rem;
+    height: 4.5rem;
+  }
+  /* brands */
+
+  /* cards */
+  .heading h1 {
+    font-size: 3.4rem;
+  }
+
+  .heading p {
+    font-size: 1.2rem;
+  }
+
+  .cards {
+    height: 80vh;
+    gap: 1.2rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .card-img {
+    width: 14.3rem;
+    height: 7.9rem;
+  }
+
+  .card {
+    width: 29rem;
+    height: 10rem;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .card-text {
+    gap: 1.2rem;
+  }
+
+  .card-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-text p {
+    font-size: 0.8rem;
+    width: 15rem;
+  }
+  /* cards */
+
+  /* input section */
+
+  .area-left {
+    gap: 1.6rem;
+  }
+
+  .areas input {
+    width: 29rem;
+    padding-left: 1rem;
+  }
+
+  [type="number"],
+  [type="text1"],
+  [type="email"] {
+    height: 3.3rem;
+  }
+
+  [type="text2"] {
+    height: 8rem;
+  }
+
+  .check {
+    width: 29rem;
+    gap: 1rem;
+  }
+
+  .check button {
+    width: 8rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
+
+  input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .area-right img {
+    width: 32rem;
+    height: 28rem;
+  }
+
+  /* input section */
+}
+
+@media (max-width: 1170px) {
+  /* price */
+  .price .heading h1 {
+    font-size: 3.5rem;
+  }
+
+  .price .heading p {
+    font-size: 1.1rem;
+  }
+
+  .blur-bcg {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .price-text {
+    width: 90%;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .price-text p {
+    font-size: 1.3rem;
+  }
+
+  .price-text button {
+    width: 13.2rem;
+    padding: 1rem;
+  }
+
+  .heading-price h2 {
+    font-size: 3.2rem;
+  }
+
+  .heading-price h3 {
+    font-size: 1.8rem;
+  }
+
+  .str {
+    font-size: 3.2rem;
+  }
+
+  .price-text img {
+    width: 40rem;
+    height: 17rem;
+    margin-top: -7rem;
+    padding-left: 6rem;
+  }
+  /* Start buttons */
+
+  .price-buttons {
+    gap: 2.5rem;
+  }
+
+  .icons i {
+    width: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .car-box {
+    gap: 1.6rem;
+  }
+
+  .car {
+    width: 22rem;
+    height: 16rem;
+  }
+
+  .v-class {
+    width: 21rem;
+    height: 11rem;
+  }
+  .s-class {
+    width: 21rem;
+    height: 11rem;
+  }
+
+  .m5 {
+    width: 21rem;
+    height: 11rem;
+  }
+
+  .car h4 {
+    font-size: 1.1rem;
+    bottom: 2rem;
+  }
+
+  /* price */
+
+  /* brands */
+  .brands {
+    height: 14.5rem;
+    margin-bottom: 10rem;
+  }
+
+  .brands img {
+    width: 14rem;
+    height: 4rem;
+  }
+  /* brands */
+
+  /* input section */
+
+  .area-left {
+    gap: 1.5rem;
+  }
+
+  .areas input {
+    width: 27rem;
+    padding-left: 1rem;
+  }
+
+  [type="number"],
+  [type="text1"],
+  [type="email"] {
+    height: 3.2rem;
+  }
+
+  [type="text2"] {
+    height: 7.5rem;
+  }
+
+  .check {
+    width: 27rem;
+    gap: 1rem;
+  }
+
+  .check button {
+    width: 7.5rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+
+  label {
+    font-size: 0.7rem;
+  }
+
+  input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .area-right img {
+    width: 30rem;
+    height: 26rem;
+  }
+
+  /* input section */
+}
+
+@media (max-width: 1140px) {
+  /* navbar */
+  .nav-center a {
+    font-size: 0.8rem;
+  }
+
+  .nav-right h2 {
+    font-size: 1rem;
+  }
+  /* navbar */
+
+  /* main */
+  .wrapper {
+    height: 35rem;
+  }
+
+  .btn-main {
+    width: 8rem;
+    height: 2.5rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .main-right {
+    width: 45rem;
+    height: 35rem;
+  }
+
+  .main-left h1 {
+    font-size: 5rem;
+  }
+
+  .main-left p {
+    font-size: 1rem;
+  }
+  /* main */
+
+  /* about */
+  .about h1 {
+    font-size: 3.5rem;
+  }
+  .about p {
+    font-size: 1rem;
+  }
+
+  .about-box {
+    padding: 1rem;
+  }
+
+  .about-text > p {
+    font-size: 0.7rem;
+  }
+
+  .about-box img {
+    width: 25rem;
+    height: 15rem;
+  }
+  /* about */
+
+  /* services */
+
+  .services h1 {
+    font-size: 3.5rem;
+  }
+
+  .services > p {
+    font-size: 1rem;
+  }
+
+  .box {
+    gap: 1.7rem;
+    width: 15rem;
+    height: 25rem;
+  }
+
+  .box-img {
+    width: 15rem;
+    height: 10rem;
+    padding: 0.8rem;
+  }
+
+  .box-img img {
+    width: 13rem;
+  }
+
+  .box-text {
+    gap: 0.5rem;
+  }
+
+  .box-text p {
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+
+  .box-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .box-text button {
+    width: 7.5rem;
+    bottom: 1.5rem;
+  }
+  /* services */
+
+  /* cards */
+  .heading h1 {
+    font-size: 3.2rem;
+  }
+
+  .heading p {
+    font-size: 1rem;
+  }
+
+  .cards {
+    height: 70vh;
+    gap: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .card-img {
+    width: 14rem;
+    height: 7.6rem;
+  }
+
+  .card {
+    width: 28rem;
+    height: 10rem;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .card-text {
+    gap: 1.2rem;
+  }
+
+  .card-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-text p {
+    font-size: 0.8rem;
+    width: 15rem;
+  }
+  /* cards */
+
+  /* input section */
+
+  .area-left {
+    gap: 1.4rem;
+  }
+
+  .areas input {
+    width: 25rem;
+    padding-left: 0.9rem;
+  }
+
+  [type="number"],
+  [type="text1"],
+  [type="email"] {
+    height: 3.1rem;
+  }
+
+  [type="text2"] {
+    height: 7.3rem;
+  }
+
+  .check {
+    width: 25rem;
+    gap: 1rem;
+  }
+
+  .check button {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+
+  label {
+    font-size: 0.7rem;
+  }
+
+  input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .area-right img {
+    width: 28rem;
+    height: 25rem;
+  }
+
+  /* input section */
+}
+
+@media (max-width: 1100px) {
+  /* price */
+  .price .heading h1 {
+    font-size: 3.3rem;
+  }
+
+  .price .heading p {
+    font-size: 0.9rem;
+  }
+
+  .blur-bcg {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .price-text {
+    width: 90%;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .price-text p {
+    font-size: 1.1rem;
+  }
+
+  .price-text button {
+    width: 13rem;
+    padding: 1rem;
+  }
+
+  .heading-price h2 {
+    font-size: 3rem;
+  }
+
+  .heading-price h3 {
+    font-size: 1.6rem;
+  }
+
+  .str {
+    font-size: 3rem;
+  }
+
+  .price-text img {
+    width: 38rem;
+    height: 15rem;
+    margin-top: -5rem;
+    padding-left: 7rem;
+  }
+  /* Start buttons */
+
+  .price-buttons {
+    gap: 2.4rem;
+  }
+
+  .icons i {
+    width: 3rem;
+    font-size: 1.3rem;
+  }
+
+  .car-box {
+    gap: 1.4rem;
+  }
+
+  .car {
+    width: 20rem;
+    height: 14rem;
+  }
+
+  .v-class {
+    width: 20rem;
+    height: 10rem;
+  }
+  .s-class {
+    width: 20rem;
+    height: 10rem;
+  }
+
+  .m5 {
+    width: 20rem;
+    height: 10rem;
+  }
+
+  .car h4 {
+    font-size: 1rem;
+    bottom: 2rem;
+  }
+
+  /* price */
+}
+
+@media (max-width: 1045px) {
+  /* navbar */
+  .nav-center > ul {
+    display: none;
+  }
+
+  .nav-content {
+    position: absolute;
+    display: block;
+    height: 5rem;
+  }
+
+  .nav-content i {
+    display: block;
+  }
+
+  .nav-content i:hover + ul {
+    display: block;
+  }
+
+  .nav-content ul {
+    display: none;
+  }
+
+  .nav-content ul a:hover {
+    color: #9cda66;
+  }
+
+  .nav-content ul:hover {
+    display: block;
+    transition: 0.3s;
+  }
+  /* navbar */
+
+  /* main */
+  .wrapper {
+    height: 30rem;
+  }
+
+  .btn-main {
+    width: 8rem;
+    height: 2.3rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .main-right {
+    width: 40rem;
+    height: 30rem;
+  }
+
+  .main-left h1 {
+    font-size: 4rem;
+  }
+
+  .main-left p {
+    font-size: 1rem;
+  }
+  /* main */
+
+  /* about */
+  .about h1 {
+    font-size: 3.5rem;
+  }
+  .about p {
+    font-size: 0.8rem;
+  }
+
+  .about-box {
+    padding: 1rem;
+  }
+
+  .about-text > p {
+    font-size: 0.6rem;
+  }
+
+  .about-box {
+    gap: 1.5rem;
+  }
+
+  .about-box img {
+    width: 20rem;
+    height: 10rem;
+  }
+  /* about */
+
+  /* services */
+
+  .services h1 {
+    font-size: 3.3rem;
+  }
+
+  .services > p {
+    font-size: 0.9rem;
+  }
+
+  .box {
+    gap: 1.7rem;
+    width: 14rem;
+    height: 23rem;
+  }
+
+  .box-img {
+    width: 14rem;
+    height: 9rem;
+    padding: 0.7rem;
+  }
+
+  .box-img img {
+    width: 12rem;
+  }
+
+  .box-text {
+    gap: 0.5rem;
+  }
+
+  .box-text p {
+    font-weight: 400;
+    font-size: 0.7rem;
+  }
+
+  .box-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .box-text button {
+    width: 7.3rem;
+    bottom: 1.3rem;
+  }
+  /* services */
+
+  /* brands */
+  .brands {
+    height: 13rem;
+    margin-bottom: 10rem;
+  }
+
+  .brands img {
+    width: 13.5rem;
+    height: 3.5rem;
+  }
+  /* brands */
+}
+
+@media (max-width: 1120px) {
+  /* price */
+  .price .heading h1 {
+    font-size: 3.2rem;
+  }
+
+  .price .heading p {
+    font-size: 0.8rem;
+  }
+
+  .blur-bcg {
+    width: 100%;
+    height: 18rem;
+  }
+
+  .price-text {
+    width: 90%;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .price-text p {
+    font-size: 1rem;
+  }
+
+  .price-text button {
+    width: 12rem;
+    padding: 1rem;
+  }
+
+  .heading-price h2 {
+    font-size: 2.9rem;
+  }
+
+  .heading-price h3 {
+    font-size: 1.5rem;
+  }
+
+  .str {
+    font-size: 2.9rem;
+  }
+
+  .price-text img {
+    width: 37rem;
+    height: 14rem;
+    margin-top: -5rem;
+    padding-left: 7.5rem;
+  }
+  /* Start buttons */
+
+  .price-buttons {
+    gap: 2.3rem;
+  }
+
+  .icons i {
+    width: 2.5rem;
+    font-size: 1.2rem;
+  }
+
+  .car-box {
+    gap: 1.3rem;
+  }
+
+  .car {
+    width: 19rem;
+    height: 13rem;
+  }
+
+  .v-class {
+    width: 19rem;
+    height: 9rem;
+  }
+  .s-class {
+    width: 19rem;
+    height: 9rem;
+  }
+
+  .m5 {
+    width: 19rem;
+    height: 9rem;
+  }
+
+  .car h4 {
+    font-size: 0.9rem;
+    bottom: 2rem;
+  }
+
+  /* price */
+}
+
+@media (max-width: 980px) {
+  /* price */
+  .price .heading h1 {
+    font-size: 3.1rem;
+  }
+
+  .price .heading p {
+    font-size: 0.7rem;
+  }
+
+  .blur-bcg {
+    width: 100%;
+    height: 16rem;
+  }
+
+  .price-text {
+    width: 90%;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .price-text p {
+    font-size: 0.9rem;
+  }
+
+  .price-text button {
+    width: 11rem;
+    padding: 0.9rem;
+  }
+
+  .heading-price h2 {
+    font-size: 2.8rem;
+  }
+
+  .heading-price h3 {
+    font-size: 1.4rem;
+  }
+
+  .str {
+    font-size: 2.8rem;
+  }
+
+  .price-text img {
+    width: 36rem;
+    height: 13rem;
+    margin-top: -4rem;
+    padding-left: 8rem;
+  }
+  /* Start buttons */
+
+  .price-buttons {
+    gap: 2.2rem;
+  }
+
+  .icons i {
+    width: 2.4rem;
+    font-size: 1.1rem;
+  }
+
+  .car-box {
+    gap: 1.2rem;
+  }
+
+  .car {
+    width: 18rem;
+    height: 12rem;
+  }
+
+  .v-class {
+    width: 18rem;
+    height: 8rem;
+  }
+  .s-class {
+    width: 18rem;
+    height: 8rem;
+  }
+
+  .m5 {
+    width: 18rem;
+    height: 8rem;
+  }
+
+  .car h4 {
+    font-size: 0.8rem;
+    bottom: 2rem;
+  }
+
+  /* price */
+
+  /* last */
+
+  .last-left h2 {
+    font-size: 2.2rem;
+  }
+
+  .last-left p {
+    font-size: 0.8rem;
+  }
+
+  .last-input {
+    width: 28rem;
+    height: 3rem;
+  }
+
+  .last-input input {
+    height: 90%;
+    width: 70%;
+    font-size: 0.8rem;
+  }
+
+  .last-input button {
+    width: 7rem;
+    height: 2.4rem;
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer-logo img {
+    width: 15rem;
+    height: auto;
+  }
+
+  .last-right ul {
+    gap: 0.8rem;
+  }
+
+  .last-address {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .address p {
+    font-size: 0.8rem;
+  }
+  /* last */
+}
+
+@media (max-width: 950px) {
+  /* price */
+  .heading {
+    margin-bottom: 3rem;
+  }
+
+  .price .heading h1 {
+    font-size: 3rem;
+  }
+
+  .price .heading p {
+    font-size: 0.6rem;
+  }
+
+  .blur-bcg {
+    width: 100%;
+    height: 14rem;
+  }
+
+  .price-text {
+    width: 90%;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .price-text p {
+    font-size: 0.8rem;
+  }
+
+  .price-text button {
+    width: 10rem;
+    padding: 0.8rem;
+  }
+
+  .heading-price h2 {
+    font-size: 2.7rem;
+  }
+
+  .heading-price h3 {
+    font-size: 1.3rem;
+  }
+
+  .str {
+    font-size: 2.7rem;
+  }
+
+  .price-text img {
+    width: 35rem;
+    height: 13rem;
+    margin-top: -5rem;
+    padding-left: 8rem;
+  }
+  /* Start buttons */
+
+  .price-buttons {
+    gap: 2rem;
+  }
+
+  .icons i {
+    width: 2.3rem;
+    font-size: 1rem;
+  }
+
+  .car-box {
+    gap: 1.1rem;
+  }
+
+  .car {
+    width: 17rem;
+    height: 11rem;
+  }
+
+  .v-class {
+    width: 17rem;
+    height: 7rem;
+  }
+  .s-class {
+    width: 17rem;
+    height: 7rem;
+  }
+
+  .m5 {
+    width: 17rem;
+    height: 7rem;
+  }
+
+  .car h4 {
+    font-size: 0.7rem;
+    bottom: 2rem;
+  }
+
+  /* price */
+}
+
+@media (max-width: 900px) {
+  /* navbar */
+
+  .navlist-content {
+    left: 70%;
+  }
+
+  .nav-content i {
+    display: none;
+  }
+
+  .nav-right i {
+    display: block;
+  }
+
+  .navlist i:hover + .navlist-content {
+    display: block;
+  }
+
+  .navlist-content ul:hover {
+    display: block;
+  }
+
+  .navlist-content ul li a:hover {
+    color: #fff;
+  }
+  /* navbar */
+
+  /* main */
+  .wrapper {
+    height: 50rem;
+  }
+
+  .main {
+    padding: 20px;
+    flex-direction: column;
+    gap: -2rem;
+  }
+
+  .btn-main {
+    width: 20rem;
+    height: 4rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .main-right {
+    width: 35rem;
+    height: 29rem;
+  }
+
+  .main-left h1 {
+    font-size: 6rem;
+  }
+
+  .main-left p {
+    width: 40rem;
+    font-size: 1.5rem;
+  }
+  /* main */
+
+  /* about */
+  .about h1 {
+    font-size: 3rem;
+  }
+  .about p {
+    font-size: 0.7rem;
+  }
+
+  .about-box {
+    padding: 1rem;
+  }
+
+  .about-text > p {
+    font-size: 0.6rem;
+  }
+
+  .about-box {
+    gap: 1rem;
+  }
+
+  .about-box img {
+    width: 20rem;
+    height: 10rem;
+  }
+  /* about */
+
+  /* services */
+
+  .services h1 {
+    font-size: 3.2rem;
+  }
+
+  .services > p {
+    font-size: 0.8rem;
+  }
+
+  .box {
+    gap: 1.6rem;
+    width: 13rem;
+    height: 22rem;
+  }
+
+  .box-img {
+    width: 13rem;
+    height: 8rem;
+    padding: 0.7rem;
+  }
+
+  .box-img img {
+    width: 11rem;
+  }
+
+  .box-text {
+    gap: 0.4rem;
+  }
+
+  .box-text p {
+    font-weight: 400;
+    font-size: 0.6rem;
+  }
+
+  .box-text h2 {
+    font-size: 1.1rem;
+  }
+
+  .box-text button {
+    width: 7rem;
+    bottom: 1rem;
+  }
+  /* services */
+
+  /* price */
+  .heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .price .heading h1 {
+    font-size: 2.8rem;
+  }
+
+  .price .heading p {
+    font-size: 0.4rem;
+  }
+
+  .blur-bcg {
+    width: 100%;
+    height: 12rem;
+  }
+
+  .price-text {
+    width: 90%;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .price-text p {
+    font-size: 0.6rem;
+  }
+
+  .price-text button {
+    width: 10rem;
+    padding: 0.8rem;
+  }
+
+  .heading-price h2 {
+    font-size: 2.5rem;
+  }
+
+  .heading-price h3 {
+    font-size: 1.1rem;
+  }
+
+  .str {
+    font-size: 2.5rem;
+  }
+
+  .price-text img {
+    width: 33rem;
+    height: 11rem;
+    margin-top: -6rem;
+    padding-left: 8rem;
+  }
+  /* Start buttons */
+
+  .price-buttons {
+    gap: 1.9rem;
+  }
+
+  .icons i {
+    width: 2.1rem;
+    font-size: 0.9rem;
+  }
+
+  .car-box {
+    gap: 1rem;
+  }
+
+  .car {
+    display: flex;
+    justify-content: center;
+    width: 16rem;
+    height: 10rem;
+  }
+
+  .v-class {
+    width: 16rem;
+    height: 6rem;
+  }
+  .s-class {
+    width: 16rem;
+    height: 6rem;
+  }
+
+  .m5 {
+    width: 16rem;
+    height: 6rem;
+  }
+
+  .car h4 {
+    font-size: 0.5rem;
+    bottom: 1.5rem;
+  }
+
+  /* price */
+
+  /* brands */
+  .brands {
+    height: 12.5rem;
+    margin-bottom: 10rem;
+  }
+
+  .brands img {
+    width: 13rem;
+    height: 3rem;
+  }
+  /* brands */
+
+  /* cards */
+  .heading h1 {
+    font-size: 3rem;
+  }
+
+  .heading p {
+    font-size: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  .cards {
+    height: 70vh;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .card-img {
+    width: 12rem;
+    height: 6rem;
+  }
+
+  .card-img img {
+    width: 10rem;
+    height: 5rem;
+  }
+
+  .card {
+    width: 25rem;
+    height: 7rem;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .card-text {
+    gap: 1rem;
+  }
+
+  .card-text h3 {
+    font-size: 1rem;
+  }
+
+  .card-text p {
+    font-size: 0.7rem;
+    width: 12.5rem;
+  }
+  /* cards */
+
+  /* input section */
+
+  .areas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .area-left {
+    gap: 1.3rem;
+  }
+
+  .areas input {
+    width: 23rem;
+    padding-left: 0.9rem;
+  }
+
+  [type="number"],
+  [type="text1"],
+  [type="email"] {
+    height: 3rem;
+  }
+
+  [type="text2"] {
+    height: 7rem;
+  }
+
+  .check {
+    width: 23rem;
+    gap: 1rem;
+  }
+
+  .check button {
+    width: 6.5rem;
+    height: 2.5rem;
+    font-size: 0.7rem;
+  }
+
+  label {
+    font-size: 0.7rem;
+  }
+
+  input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .area-right img {
+    width: 22rem;
+    height: 20rem;
+  }
+
+  /* input section */
+
+  /* last */
+
+  .last {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .last-left h2 {
+    font-size: 2rem;
+  }
+
+  .last-left p {
+    font-size: 0.6rem;
+  }
+
+  .last-input {
+    width: 28rem;
+    height: 3rem;
+  }
+
+  .last1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .last-input input {
+    height: 90%;
+    width: 70%;
+    font-size: 0.8rem;
+  }
+
+  .last-input button {
+    width: 7rem;
+    height: 2.4rem;
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer-logo img {
+    width: 15rem;
+    height: auto;
+  }
+
+  .last-right {
+    align-items: flex-start;
+  }
+
+  .last-right ul {
+    gap: 0.8rem;
+    align-items: flex-start;
+  }
+
+  .last-address {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .address p {
+    font-size: 0.8rem;
+  }
+  /* last */
+}
+
+@media (max-width: 800px) {
+  .navlist-content {
+    left: 65%;
+  }
+  /* about */
+  .about h1 {
+    font-size: 2.8rem;
+  }
+  .about p {
+    font-size: 0.7rem;
+  }
+
+  .about-box {
+    padding: 1rem;
+  }
+
+  .about-text > p {
+    font-size: 0.6rem;
+  }
+
+  .about-box {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  .about-box img {
+    width: 19rem;
+    height: 10rem;
+  }
+  /* about */
+
+  /* services */
+
+  .services h1 {
+    font-size: 2.8rem;
+  }
+
+  .services > p {
+    font-size: 0.6rem;
+  }
+
+  .service {
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    gap: 1.5rem;
+    width: 12rem;
+    height: 20rem;
+  }
+
+  .box-img {
+    width: 12rem;
+    height: 7rem;
+    padding: 0.7rem;
+  }
+
+  .box-img img {
+    width: 10rem;
+  }
+
+  .box-text {
+    gap: 0.4rem;
+  }
+
+  .box-text p {
+    font-weight: 400;
+    font-size: 0.5rem;
+  }
+
+  .box-text h2 {
+    font-size: 1rem;
+  }
+
+  .box-text button {
+    width: 6.9rem;
+    bottom: 1rem;
+    font-size: 1rem;
+  }
+  /* services */
+
+  /* price */
+  .heading {
+    margin-bottom: 2.3rem;
+  }
+
+  .price .heading h1 {
+    font-size: 2.6rem;
+  }
+
+  .price .heading p {
+    font-size: 0.5rem;
+  }
+
+  .blur-bcg {
+    width: 100%;
+    height: 11rem;
+  }
+
+  .price-text {
+    width: 90%;
+    gap: 1rem;
+    padding-top: 1.3rem;
+  }
+
+  .price-text p {
+    font-size: 0.5rem;
+  }
+
+  .price-text button {
+    width: 8rem;
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .heading-price h2 {
+    font-size: 2.3rem;
+  }
+
+  .heading-price h3 {
+    font-size: 0.9rem;
+  }
+
+  .str {
+    font-size: 2.3rem;
+  }
+
+  .price-text img {
+    width: 31rem;
+    height: 11rem;
+    margin-top: -5rem;
+    padding-left: 8rem;
+  }
+  /* Start buttons */
+
+  .price-buttons {
+    gap: 1.7rem;
+  }
+
+  .icons i {
+    width: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .car-box {
+    gap: 0.9rem;
+  }
+
+  .car {
+    display: flex;
+    justify-content: center;
+    width: 14rem;
+    height: 8rem;
+  }
+
+  .v-class {
+    width: 15rem;
+    height: 5rem;
+  }
+  .s-class {
+    width: 15rem;
+    height: 5rem;
+  }
+
+  .m5 {
+    width: 15rem;
+    height: 5rem;
+  }
+
+  .car h4 {
+    font-size: 0.4rem;
+    bottom: 1.4rem;
+  }
+
+  /* price */
+
+  /* brands */
+  .brands {
+    height: 12rem;
+    margin-bottom: 10rem;
+  }
+
+  .brands img {
+    width: 12.5rem;
+    height: 2.5rem;
+  }
+  /* brands */
+}
+
+@media (max-width: 750px) {
+  /* main */
+  .wrapper {
+    height: 40rem;
+    padding-left: 10px;
+  }
+
+  .main {
+    padding: 4rem;
+  }
+
+  .btn-main {
+    width: 20rem;
+    height: 3rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .main-right {
+    width: 25rem;
+    height: 20rem;
+  }
+
+  .main-left h1 {
+    font-size: 5rem;
+  }
+
+  .main-left p {
+    font-size: 1rem;
+  }
+  /* main */
+
+  /* about */
+  .about h1 {
+    font-size: 2.6rem;
+  }
+  .about p {
+    font-size: 0.6rem;
+  }
+
+  .about-box {
+    padding: 0.8rem;
+  }
+
+  .about-text > p {
+    font-size: 0.5rem;
+  }
+
+  .about-box {
+    display: flex;
+    gap: 0.6rem;
+  }
+
+  .about-box img {
+    width: 16rem;
+    height: 9rem;
+  }
+  /* about */
+
+  .services h1 {
+    font-size: 2.6rem;
+  }
+
+  .services > p {
+    font-size: 0.6rem;
+  }
+
+  /* price */
+  .heading {
+    margin-bottom: 2.1rem;
+  }
+
+  .price .heading h1 {
+    font-size: 2.4rem;
+  }
+
+  .price .heading p {
+    font-size: 0.5rem;
+  }
+
+  .blur-bcg {
+    width: 100%;
+    height: 10rem;
+  }
+
+  .price-text {
+    width: 90%;
+    gap: 1rem;
+    padding-top: 1.3rem;
+  }
+
+  .price-text p {
+    font-size: 0.5rem;
+  }
+
+  .price-text button {
+    width: 7rem;
+    font-size: 0.8rem;
+    padding: 0.6rem;
+  }
+
+  .heading-price h2 {
+    font-size: 2.1rem;
+  }
+
+  .heading-price h3 {
+    font-size: 0.8rem;
+  }
+
+  .str {
+    font-size: 2.1rem;
+  }
+
+  .price-text img {
+    width: 30rem;
+    height: 10rem;
+    margin-top: -5rem;
+    padding-left: 8rem;
+  }
+  /* Start buttons */
+
+  .price-buttons {
+    gap: 1.7rem;
+  }
+
+  .icons i {
+    width: 3rem;
+    font-size: 1rem;
+  }
+
+  .car-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+  }
+
+  .car {
+    display: flex;
+    justify-content: center;
+    width: 17rem;
+    height: 11rem;
+  }
+
+  .v-class {
+    width: 17rem;
+    height: 7rem;
+  }
+  .s-class {
+    width: 17rem;
+    height: 7rem;
+  }
+
+  .m5 {
+    width: 17rem;
+    height: 7rem;
+  }
+
+  .car h4 {
+    font-size: 1rem;
+    bottom: 1rem;
+  }
+
+  /* price */
+
+  /* brands */
+  .brands {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 25rem;
+    margin-bottom: 10rem;
+  }
+
+  .brands img {
+    width: 13rem;
+    height: 3rem;
+  }
+  /* brands */
+
+  /* last */
+
+  .last {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .last-left h2 {
+    font-size: 1.8rem;
+  }
+
+  .last-left p {
+    font-size: 0.6rem;
+  }
+
+  .last-input {
+    width: 25rem;
+    height: 3rem;
+  }
+
+  .last1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .last-input input {
+    height: 90%;
+    width: 70%;
+    font-size: 0.8rem;
+  }
+
+  .last-input button {
+    width: 6rem;
+    height: 2.2rem;
+    font-size: 0.8rem;
+    padding-right: 1rem;
+  }
+
+  .footer-logo img {
+    width: 13rem;
+    height: auto;
+  }
+
+  .last-right {
+    align-items: flex-start;
+  }
+
+  .last-right ul {
+    gap: 0.8rem;
+    align-items: flex-start;
+  }
+
+  .last-address {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .address p {
+    font-size: 0.6rem;
+  }
+  /* last */
+}
+
+@media (max-width: 710px) {
+  /* navbar */
+  .nav-right h2 {
+    font-size: 0.8rem;
+  }
+  /* navbar */
+
+  /* main */
+  .wrapper {
+    height: 40rem;
+    padding-left: 10px;
+  }
+
+  .main {
+    padding: 4rem;
+  }
+
+  .btn-main {
+    width: 20rem;
+    height: 3rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .main-left {
+    align-items: center;
+  }
+
+  .main-right {
+    width: 25rem;
+    height: 20rem;
+  }
+
+  .main-left h1 {
+    font-size: 4rem;
+  }
+
+  .main-left p {
+    width: auto;
+    font-size: 0.7rem;
+  }
+  /* main */
+
+  /* about */
+  .about h1 {
+    font-size: 2.5rem;
+  }
+  .about p {
+    font-size: 0.6rem;
+  }
+
+  .about-box {
+    padding: 0.8rem;
+  }
+
+  .about-text > p {
+    font-size: 0.5rem;
+  }
+
+  .about-box {
+    display: flex;
+    gap: 0.5rem;
+    line-height: 10px;
+  }
+
+  .about-box img {
+    width: 15rem;
+    height: 8rem;
+  }
+  /* about */
+
+  .service {
+    display: flex;
+    justify-content: center;
+  }
+
+  .services h1 {
+    font-size: 2.5rem;
+  }
+
+  .services > p {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 680px) {
+  /* navbar */
+  .nav-right h2 {
+    display: none;
+  }
+  /* navbar */
+
+  /* about */
+  .about h1 {
+    font-size: 2.5rem;
+  }
+  .about p {
+    font-size: 0.6rem;
+  }
+
+  .about-box {
+    padding: 0.8rem;
+  }
+
+  .about-text > p {
+    font-size: 0.5rem;
+  }
+
+  .about-box {
+    display: flex;
+    gap: 0.5rem;
+    line-height: 9px;
+  }
+
+  .about-box img {
+    width: 15rem;
+    height: 8rem;
+  }
+  /* about */
+
+  .service {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* price */
+  .heading {
+    margin-bottom: 2rem;
+  }
+
+  .price .heading h1 {
+    font-size: 2.2rem;
+  }
+
+  .price .heading p {
+    font-size: 0.5rem;
+  }
+
+  .blur-bcg {
+    width: 100%;
+    height: 11rem;
+  }
+
+  .price-text {
+    width: 90%;
+    gap: 1rem;
+    padding-top: 1.2rem;
+  }
+
+  .price-text p {
+    font-size: 0.5rem;
+  }
+
+  .price-text button {
+    width: 6rem;
+    font-size: 0.7rem;
+    padding: 0.6rem;
+  }
+
+  .heading-price h2 {
+    font-size: 2rem;
+  }
+
+  .heading-price h3 {
+    font-size: 0.7rem;
+  }
+
+  .str {
+    font-size: 2rem;
+  }
+
+  .price-text img {
+    width: 29rem;
+    height: 10rem;
+    margin-top: -6rem;
+    padding-left: 7rem;
+  }
+  /* Start buttons */
+
+  .price-buttons {
+    gap: 1.5rem;
+  }
+
+  .icons i {
+    width: 3rem;
+    font-size: 1rem;
+  }
+
+  .car-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .car {
+    display: flex;
+    justify-content: center;
+    width: 19rem;
+    height: 13rem;
+  }
+
+  .v-class {
+    width: 18rem;
+    height: 8rem;
+  }
+  .s-class {
+    width: 18rem;
+    height: 8rem;
+  }
+
+  .m5 {
+    width: 18rem;
+    height: 8rem;
+  }
+
+  .car h4 {
+    font-size: 1.2rem;
+    bottom: 1rem;
+  }
+
+  /* price */
+
+  .copy p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 650px) {
+  /* price */
+  .heading {
+    margin-bottom: 2rem;
+  }
+
+  .price .heading h1 {
+    font-size: 2.2rem;
+  }
+
+  .price .heading p {
+    font-size: 0.7rem;
+  }
+
+  .blur-bcg {
+    width: 100%;
+    height: 10.5rem;
+  }
+
+  .price-text {
+    width: 90%;
+    gap: 1rem;
+    padding-top: 1.3rem;
+  }
+
+  .price-text p {
+    font-size: 0.7rem;
+  }
+
+  .price-text button {
+    width: 6rem;
+    font-size: 0.7rem;
+    padding: 0.6rem;
+  }
+
+  .heading-price h2 {
+    font-size: 1.9rem;
+  }
+
+  .heading-price h3 {
+    font-size: 0.6rem;
+  }
+
+  .str {
+    font-size: 1.9rem;
+  }
+
+  .price-text img {
+    width: 30rem;
+    height: 10rem;
+    margin-top: -4.5rem;
+    padding-left: 10rem;
+  }
+  /* Start buttons */
+
+  .price-buttons {
+    gap: 1.7rem;
+  }
+
+  .icons i {
+    width: 3rem;
+    font-size: 1rem;
+  }
+
+  .car-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+  }
+
+  .car {
+    display: flex;
+    justify-content: center;
+    width: 17rem;
+    height: 11rem;
+  }
+
+  .v-class {
+    width: 17rem;
+    height: 7rem;
+  }
+  .s-class {
+    width: 17rem;
+    height: 7rem;
+  }
+
+  .m5 {
+    width: 17rem;
+    height: 7rem;
+  }
+
+  .car h4 {
+    font-size: 1rem;
+    bottom: 1rem;
+  }
+
+  /* price */
+  /* last */
+
+  .last {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .last-left h2 {
+    font-size: 1.6rem;
+  }
+
+  .last-left p {
+    font-size: 0.6rem;
+  }
+
+  .last-input {
+    width: 22rem;
+    height: 2.5rem;
+  }
+
+  .last1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .last-input input {
+    height: 90%;
+    width: 70%;
+    font-size: 0.8rem;
+  }
+
+  .last-input button {
+    width: 5.5rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    padding-right: 1rem;
+  }
+
+  .footer-logo img {
+    width: 11rem;
+    height: auto;
+  }
+
+  .last-right {
+    align-items: flex-start;
+  }
+
+  .last-right ul {
+    gap: 0.6rem;
+    align-items: flex-start;
+  }
+
+  .last-address {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .address p {
+    font-size: 0.6rem;
+  }
+
+  /* last */
+}
+
+@media (max-width: 540px) {
+  .nav-right button {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  /* about */
+  .about h1 {
+    font-size: 2.5rem;
+  }
+  .about p {
+    font-size: 0.6rem;
+  }
+
+  .about-box {
+    padding: 0.8rem;
+  }
+
+  .about-text > p {
+    font-size: 0.4rem;
+  }
+
+  .about-box {
+    display: flex;
+    gap: 0.5rem;
+    line-height: 8.5px;
+  }
+
+  .about-box img {
+    width: 14rem;
+    height: 7rem;
+  }
+  /* about */
+
+  .service {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* price */
+  .heading {
+    margin-bottom: 1.8rem;
+  }
+
+  .price .heading h1 {
+    font-size: 2rem;
+  }
+
+  .price .heading p {
+    font-size: 0.7rem;
+  }
+
+  .blur-bcg {
+    width: 100%;
+    height: 10.4rem;
+  }
+
+  .price-text {
+    width: 90%;
+    gap: 1rem;
+    padding-top: 1.3rem;
+  }
+
+  .price-text p {
+    font-size: 0.7rem;
+  }
+
+  .price-text button {
+    width: 5rem;
+    font-size: 0.6rem;
+    padding: 0.5rem;
+  }
+
+  .heading-price h2 {
+    font-size: 1.5rem;
+  }
+
+  .heading-price h3 {
+    font-size: 1rem;
+  }
+
+  .str {
+    font-size: 1.2rem;
+  }
+
+  .price-text img {
+    width: 27rem;
+    height: 8rem;
+    margin-top: -4.5rem;
+    padding-left: 10rem;
+  }
+  /* Start buttons */
+
+  .price-buttons {
+    gap: 1.7rem;
+  }
+
+  .icons i {
+    width: 3rem;
+    font-size: 1rem;
+  }
+
+  .car-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+  }
+
+  .car {
+    display: flex;
+    justify-content: center;
+    width: 17rem;
+    height: 11rem;
+  }
+
+  .v-class {
+    width: 17rem;
+    height: 7rem;
+  }
+  .s-class {
+    width: 17rem;
+    height: 7rem;
+  }
+
+  .m5 {
+    width: 17rem;
+    height: 7rem;
+  }
+
+  .car h4 {
+    font-size: 1rem;
+    bottom: 1rem;
+  }
+
+  /* price */
+
+  /* last */
+
+  .last {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .last-left h2 {
+    font-size: 1.3rem;
+  }
+
+  .last-left p {
+    font-size: 0.6rem;
+  }
+
+  .last-input {
+    width: 20rem;
+    height: 2.3rem;
+  }
+
+  .last1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .last-input input {
+    height: 90%;
+    width: 70%;
+    font-size: 0.8rem;
+  }
+
+  .last-input button {
+    width: 5rem;
+    height: 2rem;
+    font-size: 0.6rem;
+    padding-right: 1rem;
+  }
+
+  .footer-logo img {
+    width: 9rem;
+    height: auto;
+  }
+
+  .last-right {
+    align-items: flex-start;
+  }
+
+  .last-right ul {
+    gap: 0.6rem;
+    align-items: flex-start;
+    font-size: 1rem;
+  }
+
+  .last-address {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .address p {
+    font-size: 0.6rem;
+  }
+
+  /* last */
+}
+
+@media (max-width: 490px) {
+  .nav-left img {
+    width: 12rem;
+    height: auto;
+    margin-top: 0.8rem;
+  }
+
+  .navlist-content {
+    left: 65%;
+  }
+
+  /* about */
+  .about h1 {
+    font-size: 2.5rem;
+  }
+  .about p {
+    font-size: 0.6rem;
+  }
+
+  .about-box {
+    padding: 0.8rem;
+  }
+
+  .about-text > p {
+    font-size: 0.35rem;
+  }
+
+  .about-box {
+    display: flex;
+    gap: 0.4rem;
+    line-height: 8px;
+  }
+
+  .about-box img {
+    width: 13.5rem;
+    height: 7.5rem;
+  }
+  /* about */
+
+  /* price */
+  .heading {
+    margin-bottom: 1.6rem;
+  }
+
+  .price .heading h1 {
+    font-size: 1.8rem;
+  }
+
+  .price .heading p {
+    font-size: 0.7rem;
+  }
+
+  .blur-bcg {
+    width: 100%;
+    height: 10.3rem;
+  }
+
+  .price-text {
+    width: 90%;
+    gap: 1rem;
+    padding-top: 1.3rem;
+  }
+
+  .price-text p {
+    font-size: 0.7rem;
+  }
+
+  .price-text button {
+    width: 5rem;
+    font-size: 0.6rem;
+    padding: 0.4rem;
+  }
+
+  .heading-price h2 {
+    font-size: 1.3rem;
+  }
+
+  .heading-price h3 {
+    font-size: 0.9rem;
+  }
+
+  .str {
+    font-size: 1rem;
+  }
+
+  .price-text img {
+    width: 33rem;
+    height: 8rem;
+    margin-top: -4rem;
+    padding-left: 18rem;
+  }
+  /* price */
+
+  /* last */
+
+  .last {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .last-left h2 {
+    font-size: 1rem;
+  }
+
+  .last-left p {
+    font-size: 0.6rem;
+  }
+
+  .last-input {
+    width: 16rem;
+    height: 2rem;
+  }
+
+  .last1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .last-input input {
+    height: 90%;
+    width: 70%;
+    font-size: 0.8rem;
+  }
+
+  .last-input button {
+    width: 4rem;
+    height: 1.5rem;
+    font-size: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .footer-logo img {
+    width: 7rem;
+    height: auto;
+  }
+
+  .last-right {
+    align-items: flex-start;
+  }
+
+  .last-right ul {
+    gap: 0.6rem;
+    align-items: flex-start;
+    font-size: 1rem;
+  }
+
+  .last-address {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .address p {
+    font-size: 0.5rem;
+  }
+
+  /* last */
+}
+
+@media (max-width: 450px) {
+  /* navbar */
+  .nav-right select {
+    display: none;
+  }
+
+  .navlist-content {
+    left: 55%;
+  }
+  /* navbar */
+
+  /* main */
+  .main-right {
+    width: 20rem;
+    height: 15rem;
+  }
+  /* main */
+
+  /* about */
+  .about h1 {
+    font-size: 2rem;
+  }
+  .about p {
+    font-size: 0.6rem;
+  }
+
+  .about-box {
+    padding: 0.8rem;
+  }
+
+  .about-text > p {
+    font-size: 0.3rem;
+  }
+
+  .about-box {
+    display: flex;
+    gap: 0.4rem;
+    line-height: 7px;
+  }
+
+  .about-box img {
+    width: 13rem;
+    height: 7rem;
+  }
+  /* about */
+
+  .service {
+    display: flex;
+    justify-content: center;
+  }
+
+  .services h1 {
+    font-size: 2rem;
+  }
+
+  .services > p {
+    font-size: 0.6rem;
+  }
+
+  /* price */
+  .heading {
+    margin-bottom: 1.4rem;
+  }
+
+  .price .heading h1 {
+    font-size: 1.6rem;
+  }
+
+  .price .heading p {
+    font-size: 0.7rem;
+  }
+
+  .blur-bcg {
+    width: 100%;
+    height: 10.2rem;
+  }
+
+  .price-text {
+    width: 90%;
+    gap: 1rem;
+    padding-top: 1.2rem;
+  }
+
+  .price-text p {
+    font-size: 0.7rem;
+  }
+
+  .price-text button {
+    width: 5rem;
+    font-size: 0.6rem;
+    padding: 0.3rem;
+  }
+
+  .heading-price h2 {
+    font-size: 1.3rem;
+  }
+
+  .heading-price h3 {
+    font-size: 0.9rem;
+  }
+
+  .str {
+    font-size: 1rem;
+  }
+
+  .price-text img {
+    width: 33rem;
+    height: 8rem;
+    margin-top: -4rem;
+    padding-left: 20rem;
+  }
+  /* price */
+
+  /* brands */
+  .brands {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 25rem;
+    margin-bottom: 10rem;
+  }
+
+  .brands img {
+    width: 13rem;
+    height: 3rem;
+  }
+  /* brands */
+
+  /* input section */
+
+  .areas {
+    flex-direction: column;
+  }
+
+  .area-left {
+    gap: 1rem;
+  }
+
+  .areas input {
+    width: 20rem;
+    padding-left: 0.9rem;
+  }
+
+  [type="number"],
+  [type="text1"],
+  [type="email"] {
+    height: 3rem;
+  }
+
+  [type="text2"] {
+    height: 7rem;
+  }
+
+  .check {
+    width: 20rem;
+    gap: 1rem;
+  }
+
+  .check button {
+    width: 5rem;
+    height: 2rem;
+    font-size: 0.5rem;
+  }
+
+  label {
+    font-size: 0.6rem;
+  }
+
+  input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .area-right img {
+    width: 20rem;
+    height: 18rem;
+  }
+
+  /* input section */
+
+  .copy p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .navlist-content {
+    left: 45%;
+  }
+
+  /* main */
+  .wrapper {
+    height: 35rem;
+  }
+
+  .main-left h1 {
+    font-size: 3rem;
+  }
+
+  .main-left p {
+    width: 12rem;
+    font-size: 0.5rem;
+  }
+
+  .main-left button {
+    width: 10rem;
+  }
+
+  .main-right {
+    width: 15rem;
+    height: 10rem;
+  }
+  /* main */
+
+  /* price */
+  .heading {
+    margin-bottom: 1.2rem;
+  }
+
+  .price .heading h1 {
+    font-size: 1.4rem;
+  }
+
+  .price .heading p {
+    font-size: 0.7rem;
+  }
+
+  .blur-bcg {
+    width: 100%;
+    height: 10rem;
+  }
+
+  .price-text {
+    width: 90%;
+    gap: 1rem;
+    padding-top: 1.2rem;
+  }
+
+  .price-text p {
+    font-size: 0.7rem;
+  }
+
+  .price-text button {
+    width: 5rem;
+    font-size: 0.5rem;
+    padding: 0.2rem;
+  }
+
+  .heading-price h2 {
+    font-size: 1.1rem;
+  }
+
+  .heading-price h3 {
+    font-size: 0.8rem;
+  }
+
+  .str {
+    font-size: 0.9rem;
+  }
+
+  .price-text img {
+    position: relative;
+    top: 7rem;
+    left: 2rem;
+    width: 30rem;
+    height: 10rem;
+    margin-top: -4rem;
+    padding-left: 10rem;
+  }
+  /* price */
+
+  /* brands */
+  .brands {
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+    height: 25rem;
+    margin-bottom: 10rem;
+  }
+
+  .brands img {
+    width: 13rem;
+    height: 3rem;
+  }
+  /* brands */
+
+  /* cards */
+  .heading h1 {
+    font-size: 2.5rem;
+  }
+
+  .heading p {
+    font-size: 0.8rem;
+    margin-bottom: 5rem;
+  }
+
+  .cards {
+    height: 70vh;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .card-img {
+    width: 11rem;
+    height: 5rem;
+  }
+
+  .card-img img {
+    width: 5rem;
+    height: 3rem;
+  }
+
+  .card {
+    width: 20rem;
+    height: 7rem;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .card-text {
+    gap: 1rem;
+  }
+
+  .card-text h3 {
+    font-size: 1rem;
+  }
+
+  .card-text p {
+    font-size: 0.7rem;
+    width: 12.5rem;
+  }
+  /* cards */
+
+  /* last */
+
+  .last {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .last-left h2 {
+    font-size: 0.8rem;
+  }
+
+  .last-left p {
+    font-size: 0.6rem;
+  }
+
+  .last-input {
+    width: 13rem;
+    height: 2rem;
+  }
+
+  .last1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .last-input input {
+    height: 90%;
+    width: 70%;
+    font-size: 0.6rem;
+  }
+
+  .last-input button {
+    width: 3.5rem;
+    height: 1.5rem;
+    font-size: 0.5rem;
+    padding-right: 1rem;
+  }
+
+  .footer-logo img {
+    width: 5rem;
+    height: auto;
+  }
+
+  .last-right {
+    align-items: flex-start;
+  }
+
+  .last-right ul {
+    gap: 0.6rem;
+    align-items: flex-start;
+    font-size: 0.8rem;
+  }
+
+  .last-address {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .address p {
+    font-size: 0.5rem;
+  }
+
+  /* last */
+
+  .copy p {
+    font-size: 0.7rem;
+  }
+}
